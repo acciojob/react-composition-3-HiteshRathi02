@@ -35,9 +35,7 @@ const Tooltip = ({ text, children }) => {
           {text}
         </span>
       )}
-      <div data-testid="tooltip-child">
-        {children}
-      </div>
+      {children}
     </div>
   );
 };
