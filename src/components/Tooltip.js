@@ -10,11 +10,10 @@ const Tooltip = ({ text, children }) => {
 
   return (
     <div
-      className="tooltip"
       onMouseEnter={showTooltip}
       onMouseLeave={hideTooltip}
     >
-      <span className="tooltiptext" style={visible? {display:"block"}:{display:"none"}}>{text}</span>
+      {visible && <span className="tooltiptext">{text}</span>}
       {children}
     </div>
   );
